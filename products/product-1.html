@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product 1 - My Awesome Store</title>
-    <meta name="description" content="This is the first awesome product we have.">
+    <title>Kids School Shoes - Product 1 | My Awesome Store</title>
+    <meta name="description" content="High-quality kids school shoes for comfort, durability, and style. Available in multiple sizes and colors. Perfect for school and playground.">
     <link rel="canonical" href="https://daxchui.github.io/geo_auditor_demo/products/product-1.html">
     <link rel="alternate" hreflang="en-us" href="https://daxchui.github.io/geo_auditor_demo/products/product-1.html">
     <link rel="alternate" hreflang="es-es" href="https://daxchui.github.io/geo_auditor_demo/es/products/product-1.html">
@@ -13,9 +13,12 @@
     {
       "@context": "https://schema.org",
       "@type": "Product",
-      "name": "Product 1",
-      "image": "https://daxchui.github.io/geo_auditor_demo/images/product-1.jpg",
-      "description": "This is the first awesome product we have.",
+      "name": "Kids School Shoes - Product 1",
+      "image": [
+        "https://daxchui.github.io/geo_auditor_demo/images/product-1.jpg",
+        "https://daxchui.github.io/geo_auditor_demo/images/product-1-2.jpg"
+      ],
+      "description": "High-quality kids school shoes designed for comfort, durability, and style. Available in multiple sizes and colors.",
       "sku": "P1-12345",
       "brand": {
         "@type": "Brand",
@@ -28,7 +31,34 @@
         "price": "29.99",
         "availability": "https://schema.org/InStock",
         "itemCondition": "https://schema.org/NewCondition"
-      }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "25"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": "Jane Doe",
+          "datePublished": "2025-08-20",
+          "reviewBody": "My son loves these shoes! Very comfortable and durable.",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
+          }
+        },
+        {
+          "@type": "Review",
+          "author": "John Smith",
+          "datePublished": "2025-08-18",
+          "reviewBody": "Great shoes for school. Fit perfectly and easy to clean.",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "4"
+          }
+        }
+      ]
     }
     </script>
 </head>
@@ -42,14 +72,46 @@
                 <li><a href="product-2.html">Product 2</a></li>
             </ul>
         </nav>
+        <div class="breadcrumbs">
+            <a href="../index.html">Home</a> &gt; <a href="product-1.html">Kids School Shoes</a>
+        </div>
     </header>
     <main>
         <article>
-            <h2>Product 1</h2>
-            <img src="../images/product-1.jpg" alt="Product 1">
-            <p>This is the first awesome product we have.</p>
-            <p>Price: $29.99</p>
-            <p>Availability: In Stock</p>
+            <h2>Kids School Shoes - Product 1</h2>
+            <div class="product-images">
+                <img src="../images/product-1.jpg" alt="Kids School Shoes - front view">
+                <img src="../images/product-1-2.jpg" alt="Kids School Shoes - side view">
+            </div>
+            <p>These high-quality kids school shoes provide excellent comfort, durability, and style for daily school wear. Perfect for classrooms, playgrounds, and sports activities.</p>
+            <ul>
+                <li>Available in sizes: 6, 7, 8, 9, 10</li>
+                <li>Colors: Red, Blue, Black</li>
+                <li>Material: Breathable leather upper, non-slip rubber sole</li>
+                <li>Easy to clean and maintain</li>
+            </ul>
+            <p><strong>Price:</strong> $29.99</p>
+            <p><strong>Availability:</strong> In Stock</p>
+
+            <section class="faq">
+                <h3>Frequently Asked Questions</h3>
+                <dl>
+                    <dt>Are these shoes suitable for playground use?</dt>
+                    <dd>Yes, the non-slip rubber sole makes them safe for playground activities.</dd>
+                    <dt>Do they come in different colors?</dt>
+                    <dd>Yes, available in Red, Blue, and Black.</dd>
+                    <dt>Can I return if the size doesn’t fit?</dt>
+                    <dd>Yes, we offer a 30-day return policy.</dd>
+                </dl>
+            </section>
+
+            <section class="related-products">
+                <h3>Related Products</h3>
+                <ul>
+                    <li><a href="product-2.html">Kids Sneakers - Product 2</a></li>
+                    <li><a href="product-3.html">School Sandals - Product 3</a></li>
+                </ul>
+            </section>
         </article>
     </main>
     <footer>
