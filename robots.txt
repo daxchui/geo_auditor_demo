@@ -3,4 +3,4 @@ User-agent: *
 Disallow:
 
 # Sitemap location
-Sitemap: https://example.com/sitemap.xml
+Sitemap: https://daxchui.github.io/geo_auditor_demo/sitemap.xml
